@@ -1,0 +1,61 @@
+#squareStyle {
+	width: 100px;
+	height: 100px;
+	background:black;
+    display: block;
+}
+#rectangleStyle {
+	width: 200px;
+	height: 100px;
+	background: black;
+    display: none;
+}
+#circleStyle {
+	width: 100px;
+	height: 100px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    display: none;
+}
+
+
+
+.squareStyle {
+	width: 100px;
+	height: 100px;
+	background:black;
+    display: block;	
+	transition-duration: .8s;
+}
+.rectangleStyle {
+	width: 200px;
+	height: 100px;
+	background: black;
+    display: block;
+	transition-duration: .8s;
+}
+.circleStyle {
+	width: 100px;
+	height: 100px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    display: block;
+	transition-duration: .8s;
+}
+
+.cololor{
+    background: black;
+}
+.text {
+	position: relative;
+    text-align: center;
+    top: 38%;
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+    font-weight: bolder;
+}

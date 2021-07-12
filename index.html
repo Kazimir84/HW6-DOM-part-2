@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>        
+    <meta charset="utf-8">  
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+    <title>HW5-DOM</title>
+  </head>
+<body>		
+<div>HW6-DOM-part-2</div>
+<div>
+  <div id="div1" style="height: 100px; background-color: black"></div>
+
+<!-- 1 вариант включить 3 нижних DIV и отключить верхний с id="div1"-->
+  <!-- <div id="squareStyle"></div>
+  <div id="rectangleStyle"></div>
+  <div id="circleStyle"></div> -->
+
+</div>
+<form action="">
+  <legend>Выберите фигуру</legend>
+  <select name="forms" id="select"> 
+    <option value="" selected disabled>Выберите фигуру</option> 
+    <option value="Квадрат" id="square">Квадрат</option>
+    <option value="Прямоугольник" id="rectangle">Прямоугольник</option>
+    <option value="Круг" id="circle">Круг</option>
+  </select>
+  <input type="text" id="color" placeholder="Укажите цвет">
+  <input type="button" id="btn" value="Применить цвет"> 
+</form>
+  <script src="./main.js" defer></script>
+</body>
+</html>
