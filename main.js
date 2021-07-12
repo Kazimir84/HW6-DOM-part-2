@@ -2,23 +2,23 @@ console.log('------------- # 3')
 
 // 2 вариант (Можно через swich но мне больше нравится через if)
 
-let div1 = document.getElementById('div1');
+let divInput = document.getElementById('divInput');
 let select = document.getElementById('select');
 let inputColor = document.getElementById('color');
 let btn = document.getElementById('btn');
 
 select.addEventListener('change', function() {
         let n = this.value;   
-        if (n === 'Квадрат') {            
-            div1.className = 'squareStyle';  
+        if (n === 'square') {            
+            divInput.className = 'squareStyle';  
             document.getElementsByClassName('squareStyle')[0].style.background = 'black';    
             document.getElementsByClassName('squareStyle')[0].innerHTML = '<p class = "text">Квадрат</p>'
-        } else if (n === 'Прямоугольник') {
-           div1.className = 'rectangleStyle';
+        } else if (n === 'rectangle') {
+            divInput.className = 'rectangleStyle';
            document.getElementsByClassName('rectangleStyle')[0].style.background = 'black';
            document.getElementsByClassName('rectangleStyle')[0].innerHTML = '<p class = "text">Прямоугольник</p>'
-        } else if (n === 'Круг') {
-           div1.className = 'circleStyle';
+        } else if (n === 'circle') {
+            divInput.className = 'circleStyle';
            document.getElementsByClassName('circleStyle')[0].style.background = 'black';
            document.getElementsByClassName('circleStyle')[0].innerHTML = '<p class = "text">Круг</p>'
         } else {
@@ -30,14 +30,14 @@ btn.addEventListener('click', changeColor);
 
 function changeColor() {        
         let inputValue = inputColor.value;        
-        if (select.value === 'Квадрат' && inputValue !== '') {
-            div1.style.background = inputValue;                  
-        } else if (select.value === 'Прямоугольник' && inputValue !== '') {
-            div1.style.background = inputValue;            
-        } else if (select.value === 'Круг' && inputValue !== '') {            
-            div1.style.background = inputValue;
+        if (select.value === 'square' && inputValue !== '') {
+            divInput.style.background = inputValue;                  
+        } else if (select.value === 'rectangle' && inputValue !== '') {
+            divInput.style.background = inputValue;            
+        } else if (select.value === 'circle' && inputValue !== '') {            
+            divInput.style.background = inputValue;
         } else {  
-            div1.style.background = 'black';                           
+            divInput.style.background = 'black';                           
             alert('Выберите сначала фигуру, а потом напишите цвет! По умолчанию цвет - Черный.');            
         };        
 };
